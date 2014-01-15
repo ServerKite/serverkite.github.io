@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +10,11 @@
     <link rel="shortcut icon" href="img/favicon.ico">
 
     <title>bench.sh &mdash; ServerKite</title>
-
-    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
   </head>
 
@@ -61,15 +54,15 @@
 				</ul>
 			</div>
 		</div>
-      </div>
+         </div>
     </div>
 	
 	
 	<div class="kite-container">
 	<h2>Using ServerKite:</h2>
 		<p>Download the <code>bench.sh</code> via the following link:<p>
-			<h4>Using GNU Wget:</h4> <pre>wget http://serverkite.com/bench.sh</pre>
-			<h4>Using Aget:</h4> <pre>aget http://serverkite.com/bench.sh</pre>
+			<h4>Using GNU Wget:</h4> <pre>wget https://github.com/ServerKite/bench.sh/blob/master/bench.sh</pre>
+			<h4>Using Aget:</h4> <pre>aget https://github.com/ServerKite/bench.sh/blob/master/bench.sh</pre>
 		<p>Next, you'll have to make the bash file executable. You can do so by running this commands:</p>
 			<pre>chmod +x bench.sh</pre>
 		<p>Once you have downloaded the script onto your server, all that's left to do is execute the <code>bench.sh</code> file using the bash commands:</p>
@@ -82,11 +75,10 @@
 		<pre>git clone https://github.com/ServerKite/bench.sh.git</pre>
 		<h3>...meh ..I need something short.</h3>
 		<p>In that case, just execute the following command onto your favorite linux terminal.</p>
-		<pre>wget http://serverkite.com/bench.sh -O - -o /dev/null|bash</pre>
+		<pre>wget https://github.com/ServerKite/bench.sh/blob/master/bench.sh -O - -o /dev/null|bash</pre>
 		<p>The script will now run. Kindly note: When it is finnished with the benchmarking process, it will delete the <code>bench.sh</code> file.</p>
 		<br>	
 	</div>
-	
 	
 	<div class="jumbotron">
 		<div class="kite-container">
@@ -99,19 +91,13 @@
  
     </div> <!-- /container -->
  
-	<div id="foo ter">
       <div class="kite-container">
         <p class="pull-left">&copy; 2014 ServerKite. Flying on <a href="https://pages.github.com" target="_blank">GitHub</a>.</p>
 		<p class="pull-right">License &middot; <a href="https://twitter.com/ServerKite">@ServerKite</a></p>
       </div>
-    </div>
+     
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://oss.maxcdn.com/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="http://oss.maxcdn.com/libs/twitter-bootstrap/js/bootstrap.js"></script>
-  
-  
- 
-</body></html>
+</body>
+</html>
