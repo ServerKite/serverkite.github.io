@@ -59,25 +59,21 @@
 	
 	
 	<div class="kite-container">
-	<h2>Using ServerKite:</h2>
-		<p>Download the <code>bench.sh</code> via the following link:<p>
-			<h4>Using GNU Wget:</h4> <pre>wget https://github.com/ServerKite/bench.sh/blob/master/bench.sh</pre>
-			<h4>Using Aget:</h4> <pre>aget https://github.com/ServerKite/bench.sh/blob/master/bench.sh</pre>
-		<p>Next, you'll have to make the bash file executable. You can do so by running this commands:</p>
-			<pre>chmod +x bench.sh</pre>
-		<p>Once you have downloaded the script onto your server, all that's left to do is execute the <code>bench.sh</code> file using the bash commands:</p>
-			<pre>bash bench.sh</pre>
-			<p>or alternativly</p>
-			<pre>./bench.sh</pre>
-		<p>Now, grab a cup of coffee or a can of beer and wait. The estimated time to finish the whole process is 10 - 15 Minutes, depending on the network.</p>
-		<h3>I have Git installed on my machine..</h3>
-		<p>If so, you can 'git clone' the file.</p>
+	<h2>Using bench.sh:</h2>
+		<p>We recommend that you download via "Git". On Debian, you dowload it via the 'apt-get' repo &mdash; <code></code>apt-get install git-core</code></p>
+		<p>One Git is installed on your machine, execute the following commands:</p>
 		<pre>git clone https://github.com/ServerKite/bench.sh.git</pre>
-		<h3>...meh ..I need something short.</h3>
-		<p>In that case, just execute the following command onto your favorite linux terminal.</p>
-		<pre>wget https://github.com/ServerKite/bench.sh/blob/master/bench.sh -O - -o /dev/null|bash</pre>
-		<p>The script will now run. Kindly note: When it is finnished with the benchmarking process, it will delete the <code>bench.sh</code> file.</p>
-		<br>	
+		<pre>cd bench.sh</pre>
+        	<p>Next, you will have to make the bash file 'executable'. You can do so by running this commands:</p>
+		<pre>chmod +x bench.sh</pre>
+		<pre>bash bench.sh</pre>
+		<p>or alternativly</p>
+		<pre>./bench.sh</pre>
+		<p>The bench.sh will now start benchmarking.</p>
+		<h3>That's too long! Give me a simple one.</h3>
+		<pre>git clone https://github.com/ServerKite/bench.sh.git && cd bench.sh && chmod +x bench.sh && bash bench.sh</pre>
+		<p>Now, grab a cup of coffee or a can of beer and wait. The estimated time to finish the whole process is 10 - 15 Minutes &mdash; depending on the network.</p>
+	 	<br>	
 	</div>
 	
 	<div class="jumbotron">
