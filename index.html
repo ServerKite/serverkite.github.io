@@ -24,11 +24,11 @@
 		<div class="row">
 			<div class="col-md-6">
 				<h1><img src="http://s15.postimg.org/s0pubjz2v/kite_by_luis_cm.png">ServerKite</h1>
-				  <p>A simple, server benchmark script written to benchmark your Virtual Private Server and/or Dedicated Server Server via a Bash script that does speed test, I/O and UnixBench test.</p>
+				  <p>A stupidly-simple server benchmark script written to benchmark your Virtual Private Server and/or Dedicated Server.</p>
 				  <hr>
 				  <div class="text-center">
-					<button class="btn btn-lg btn-default"><i class="fa fa-github"></i> Fork the Source Code	</button>
-					<button class="btn btn-lg btn-primary"><i class="fa fa-twitter"></i> Follow the Birds</button>
+					<a href="https://github.com/ServerKite/bench.sh" target="_blank" class="btn btn-lg btn-default"><i class="fa fa-github"></i> Fork the Source Code</a>
+					<a href="https://twitter.com/ServerKite" target="_blank" class="btn btn-lg btn-primary"><i class="fa fa-twitter"></i> Follow the Birds</a>
 				</div>
 			</div>
 			<div class="col-md-6">	
@@ -41,12 +41,13 @@
 	<div class="jumbotron">
 		<div class="kite-container">
 			<div class="row show-grid">
-				<div class="col-md-4"><center><h1>FEATURES</h1><h2>Speed Test - I/O - IOPing - UnixBench</h2></center></div>
+				<div class="col-md-4"><center><h1>FEATURES</h1><h2>Speed Test - I/O - Ping - Traceroute</h2></center></div>
 			<div class="col-md-8">
 				<ul>
-					<li>Speed tests from 30+ well-known DataCenters and +10 top VPS providers across the World</li>
-					<li>Over 50+ speed test locations including: North America, South America, Europe, Asia & Middle East</li>
-					<li>Verity of 10MB, 100MB & 1GB test file sizes included; 100MB for the most</li>
+					<li>Speed tests from 30+ well-known data centers across the World</li>
+					<li>Speed tests from +10 VPS providers across the World</li>
+					<li>100+ speed test links in various locations including: North/South America, Europe, Asia & Middle East</li>
+					<li>Standard across the board with 100MB size speed test links</li>
 					<li>Pings, seek test, sequential, cache and non-cache I/O tests</li>
 					<li>Several dd tests and raw FIO test</li>
 					<li>Speedtest.net test w/ link</li>
@@ -62,15 +63,20 @@
 	<h2>Using bench.sh:</h2>
 		<p>We recommend that you download via "Git". &mdash; On Debian, you dowload it via the 'apt-get' repo by executing <code>apt-get install git-core</code></p>
 		<p>Once Git is installed on your machine, execute the following commands:</p>
+		<pre>git clone http://git.vpsboard.com/ServerKite/bench.git</pre>
+		<p>To use SSL, you will have to use our GitHub repo instead. Stable release.</p>
 		<pre>git clone https://github.com/ServerKite/bench.sh.git</pre>
-		<pre>cd bench.sh</pre>
+		<p>Now, change the shell's working directory to:</p>
+		<pre>cd bench</pre>
         	<p>Next, you will have to make the bash file 'executable'. You can do so by running 'chmod' command as shown below:</p>
 		<pre>chmod +x bench.sh</pre>
 		<pre>bash bench.sh</pre>
 		<p>or alternativly</p>
 		<pre>./bench.sh</pre>
 		<p>The bench.sh will now start benchmarking.</p>
-		<h3>That's too long! Give me a simple one.</h3>
+		<h3>Give me a simple one.</h3>
+		<pre>git clone http://git.vpsboard.com/ServerKite/bench.git && cd bench && chmod +x bench.sh && bash bench.sh</pre>
+		<p>or for SSL (stable release), execute:</p>
 		<pre>git clone https://github.com/ServerKite/bench.sh.git && cd bench.sh && chmod +x bench.sh && bash bench.sh</pre>
 		<p>Now, grab a cup of coffee or a can of beer and wait. The estimated time to finish the whole process is 10 - 15 Minutes &mdash; depending on the network.</p>
 	 	<br>	
@@ -89,7 +95,7 @@
  
       <div class="kite-container">
         <p class="pull-left">&copy; 2014 ServerKite. Flying on <a href="https://pages.github.com" target="_blank">GitHub</a>.</p>
-        <a href="https://twitter.com/ServerKite">@ServerKite</a></p>
+        <a href="https://twitter.com/ServerKite" target="_blank" class="pull-right">@ServerKite</a></p>
       </div>
      
     <!-- JavaScripts -->
