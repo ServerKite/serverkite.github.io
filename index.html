@@ -2,16 +2,13 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ServerKite &mdash; A stupidly-simple server benchmark script written to benchmark your Virtual Private Server and/or Dedicated Server. Handles speed, I/O, Ping tests etc.">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="img/favicon.ico">
-
+    <meta name="author" content="ServerKite">
     <title>bench.sh &mdash; ServerKite</title>
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -20,15 +17,15 @@
 
 <body>
 <a href="https://github.com/ServerKite" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a><div class="kite-header">
-      <div class="kite-container">
+       <div class="kite-container">
 		<div class="row">
 			<div class="col-md-6">
 				<h1><img src="http://s15.postimg.org/s0pubjz2v/kite_by_luis_cm.png">ServerKite</h1>
 				  <p>A stupidly-simple server benchmark script written to benchmark your Virtual Private Server and/or Dedicated Server. Handles speed, I/O, Ping tests etc.</p>
 				  <hr>
 				  <div class="text-center">
-					<a href="https://github.com/ServerKite/bench.sh" target="_blank" class="btn btn-lg btn-default"><i class="fa fa-github"></i> Fork the Source Code</a>
-					<a href="https://twitter.com/ServerKite" target="_blank" class="btn btn-lg btn-primary"><i class="fa fa-twitter"></i> Follow the Birds</a>
+					<a href="https://github.com/ServerKite/bench.sh" target="_blank" class="btn btn-lg btn-default"><i class="fa fa-github"></i> Fork me on GitHub</a>
+					<a href="https://twitter.com/ServerKite" target="_blank" class="btn btn-lg btn-primary"><i class="fa fa-twitter"></i> @ServerKite</a>
 				</div>
 			</div>
 			<div class="col-md-6">	
@@ -41,7 +38,7 @@
 	<div class="jumbotron">
 		<div class="kite-container">
 			<div class="row show-grid">
-				<div class="col-md-4"><center><h1>FEATURES</h1><h2>Speed Test - I/O - Ping - Traceroute</h2></center></div>
+				<div class="col-md-4"><center><h1>FEATURES</h1><h2>Speed Test &middot; I/O &middot; Ping &middot; Traceroute</h2></center></div>
 			<div class="col-md-8">
 				<ul>
 					<li>Speed tests from 30+ well-known data centers across the World</li>
@@ -50,7 +47,7 @@
 					<li>Standard across the board with 100MB size speed test links</li>
 					<li>Pings, seek test, sequential, cache and non-cache I/O tests</li>
 					<li>Several dd tests and raw FIO test</li>
-					<li>Speedtest.net, Ping, traceroute and a lot more!</li>
+					<li>Speedtest.net, ping, traceroute and a lot more!</li>
 				</ul>
 			</div>
 		</div>
@@ -61,27 +58,11 @@
 	<div class="kite-container">
 	<h2>Using bench.sh:</h2>
 		<p>We recommend that you download via "Git". &mdash; On Debian, you dowload it via the 'apt-get' repo by executing <code>apt-get install git-core</code></p>
-		<p>Once Git is installed on your machine, execute the following commands:</p>
-		<pre>git clone git clone http://git.vpsboard.com/ServerKite/bench-sh.git</pre>
-		<p>If you prioritize on utilizing SSL-links-only, then you will have to use the GitHub repo instead. You can do so by executing the following command with 'https://'.</p>
-		<pre>git clone https://github.com/ServerKite/bench.sh.git</pre>
-		<p>Now, change the shell's working directory to:</p>
-		<pre>cd bench-sh</pre>
-		<p>Final step, run  the bash-script via the bash command</p>
-		<pre>bash bench.sh</pre>
-		<p>or alternativly</p>
-		<pre>./bench.sh</pre>
-		<p>The bench.sh will now start benchmarking.</p>
-		
-		<h3>I'm getting an effing "Permission denied". Fustrating!</h3>
-		<p>If you are getting the above mentioned error, you will have to make the bash file 'executable'. You can do so by running 'chmod' command as shown below:</p>
-		<pre>chmod +x bench.sh</pre>
-		
-		<h3>Give me a simple one, will ya!</h3>
-		<pre>git clone http://git.vpsboard.com/ServerKite/bench-sh.git && cd bench && chmod +x bench.sh && bash bench.sh</pre>
-		<p>or for SSL, execute:</p>
+		<p>Once Git is installed on your machine, execute the following command:</p>
 		<pre>git clone https://github.com/ServerKite/bench.sh.git && cd bench.sh && chmod +x bench.sh && bash bench.sh</pre>
-		<p>Now, grab a cup of coffee or a can of beer and wait. The estimated time to finish the whole process is 5 - 10 Minutes &mdash; depending on the network.</p>
+		<p>[Alternative]: In support of <a href="https://vpsboard.com" target="_blank">vpsBoard</a>, we have deployed a repo there hosted using GitLab.</p>
+		<pre>git clone http://git.vpsboard.com/ServerKite/bench-sh.git && cd bench-sh && chmod +x bench.sh && bash bench.sh</pre>
+		<p>Now, grab a cup of coffee or a can of beer and wait. The estimated time to finish the whole process is 5 - 10 Minutes &mdash; then again, depending on the network.</p>
 	 	<br>	
 	</div>
 	
@@ -97,11 +78,10 @@
     </div>
  
       <div class="kite-container">
-        <p class="pull-left">&copy; 2014 ServerKite. Flying on <a href="https://pages.github.com" target="_blank">GitHub</a>.</p>
+        <p class="pull-left">&cipy; 2014 ServerKite. Flying on <a href="https://pages.github.com" target="_blank">GitHub</a>.</p>
         <a href="https://twitter.com/ServerKite" target="_blank" class="pull-right">@ServerKite</a></p>
       </div>
      
-    <!-- JavaScripts -->
     <script src="http://oss.maxcdn.com/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="http://oss.maxcdn.com/libs/twitter-bootstrap/js/bootstrap.js"></script>
 </body>
