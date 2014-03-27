@@ -5277,8 +5277,8 @@ a.list-group-item.active > .badge,
 
 @media screen and (min-width: 768px) {
   .kite-header, .jumbotron {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .kite-container .kite-header .jumbotron{
     padding-right: 60px;
