@@ -767,9 +767,6 @@ pre {
   background: rgba(0,0,0,0.2);
   word-break: break-all;
   word-wrap: break-word;
-  border: 2px solid rgba(0,0,0,0.2);
-  border-right: 6px solid rgba(0,0,0,0.2);
-  border-bottom: 3px solid rgba(0,0,0,0.2);
   border-radius: 4px;
 }
 
