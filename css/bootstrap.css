@@ -7177,13 +7177,12 @@ td.visible-print {
   background-color:#dedede;
 }
 
-
 ::selection {
-	background: #5d5f70; 
+	background: rgba(0,0,0,0.5); 
 	color: #fff;
 	}
 ::-moz-selection {
-	background: #5d5f70; 
+	background: rgba(0,0,0,0.5); 
 	color: #fff;
 }
  
