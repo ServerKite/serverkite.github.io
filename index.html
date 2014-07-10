@@ -46,8 +46,8 @@
 			</div>
             <p class="lead">ServerKite is a stupidly-simple server benchmark script written to benchmark your Virtual Private Server and/or Dedicated Server. Handles speed, I/O, Ping tests etc. &mdash; Put your machine to the test and see if it is up to standard, in terms of performance in accordance to it's 'on-paper' specifications.</p>
 			<div class="row">
-				<div class="col-md-10"><pre id="copy">git clone https://github.com/ServerKite/bench.sh.git && cd bench.sh && chmod +x bench.sh && bash bench.sh</pre></div>
-				<div class="col-md-2"><a href="#" data-copy="http://test.three.com/" id="copy-button" class="btn btn-default btn-lg">Copy <span class="octicon octicon-clippy"></span></a></div>
+				<div class="col-md-10"><pre id="terminal">git clone https://github.com/ServerKite/bench.sh.git && cd bench.sh && chmod +x bench.sh && bash bench.sh</pre></div>
+				<div class="col-md-2"><a href="#" class="btn btn-default btn-lg" id="copy-to-terminal">Copy <span class="octicon octicon-clippy"></span></a></div>
 			</div>
 		 </div>
           <div class="mastfoot animated zoomIn">
@@ -65,11 +65,10 @@
 	<script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.zclip/1.1.1/jquery.zclip.min.js"></script>
 	<script>
-	$("#copy-button").zclip({
-		path: "http://www.steamdev.com/zclip/js/ZeroClipboard.swf",
-		copy: function() {
-			return $(this).prev().text();
-		}
+	$(document).ready(function(){
+		$('a#copy-to-terminal').zclip({
+			path:'http://www.steamdev.com/zclip/js/ZeroClipboard.swf',
+			copy:$('pre#terminal').text()
 	});
 	</script>
 </body>
